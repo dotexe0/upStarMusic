@@ -1,5 +1,6 @@
 // Todo: Create Artist Model
 const mongoose = require('mongoose');
+const AlbumSchema = require('./album');
 
 const { Schema } = mongoose;
 
@@ -13,7 +14,7 @@ const ArtistSchema = new Schema({
   netWorth: { type: Number },
   labelName: { type: String },
   retired: { type: Boolean },
-  albumns: [{ type: mongoose.Types.ObjectId, ref: 'albumn' }]
+  albumns: [AlbumSchema]
 });
 
 const Artist = mongoose.model('artist', ArtistSchema);

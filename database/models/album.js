@@ -1,4 +1,4 @@
-// Todo: create Album Schema
+// Only make a schema since it is a subdoc of artist
 const mongoose = require('mongoose');
 
 const { Schema } = mongoose;
@@ -12,6 +12,4 @@ const AlbumSchema = new Schema({
   revenue: { type: Number }
 });
 
-const Album = mongoose.model('album', AlbumSchema);
-
-module.exports = Album;
+module.exports = AlbumSchema;
