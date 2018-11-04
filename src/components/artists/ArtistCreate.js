@@ -29,6 +29,9 @@ class ArtistCreate extends Component {
         <div className="input-field">
           <Field name="genre" component="input" placeholder="Genre" />
         </div>
+        <div className="input-field">
+          <Field name="labelName" component="input" placeholder="Label" />
+        </div>
         <div className="has-error">
           {this.props.errorMessage}
         </div>
